@@ -1,4 +1,5 @@
-## CRUD para base de datos, agregar usuario, modificar valores, darle un credito, eliminar valores eliminar usuarios etc.  
+## CRUD para base de datos, agregar usuario, modificar valores, darle un credito, eliminar valores eliminar usuarios etc. 
+http://localhost/BaseDedatosCRUD/public/ 
 
 Problemas con la migración   Illuminate\Database\QueryException 
 Solución:
@@ -26,6 +27,20 @@ public function boot()
 }
 
 NOTA!!! LARAVEL NO PUEDE MIGRAR CON ARGUMENTOS QUE CONTENGAN  DEFAULT
+
+
+PROBLEMA EN EL CRUD-  Clase de destino [Fruitcake\Cors\HandleCors] no existe
+Fruitcake CORS El mensaje de error "Clase de destino [Fruitcake\Cors\HandleCors] no existe" 
+generalmente ocurre cuando hay un problema con la instalación o configuración del paquete Fruitcake CORS en Laravel.
+Para resolver este problema, puede probar los siguientes pasos:
+Asegúrate de haber instalado correctamente el paquete Fruitcake CORS ejecutando el siguiente comando en el directorio de tu proyecto Laravel:
+Copiar código
+composer require fruitcake/laravel-cors
+Después de instalar el paquete, borre el caché de Laravel y los archivos de configuración ejecutando los siguientes comandos:
+Copiar código
+php artisan cache:clear
+php artisan config:clear
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
